@@ -1,11 +1,12 @@
 #include<stdio.h>
 main()
 {
-    int r,c,p=1,n;
+    int i,m,r,c,p=1,n;
 
-    scanf("%d",&n);
-
-    for(r=n; r>=1; r--)
+    scanf("%d %d",&n,&m);
+for(i=1;i<=m;i++)
+{
+    for(r=n-1; r>=1; r--)
     {
         for(c=1;c<=r;c++)
         {
@@ -37,5 +38,6 @@ main()
         }
         printf("\n");
     }
+}
 }
 
